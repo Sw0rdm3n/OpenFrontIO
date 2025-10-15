@@ -866,10 +866,7 @@ export class DefaultConfig implements Config {
       return 50n;
     }
 
-    const baseHumanGoldRate = 100n;
-    const goldAccelerationMultiplier = 2n;
-
-    return baseHumanGoldRate * goldAccelerationMultiplier;
+    return 100n;
   }
 
   nukeMagnitudes(unitType: UnitType): NukeMagnitude {
