@@ -865,7 +865,11 @@ export class DefaultConfig implements Config {
     if (player.type() === PlayerType.Bot) {
       return 50n;
     }
-    return 100n;
+
+    const baseHumanGoldRate = 100n;
+    const goldAccelerationMultiplier = 2n;
+
+    return baseHumanGoldRate * goldAccelerationMultiplier;
   }
 
   nukeMagnitudes(unitType: UnitType): NukeMagnitude {
